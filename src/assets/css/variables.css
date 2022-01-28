@@ -1,0 +1,7 @@
+:root {
+  --color-primary: #e50914;
+  --color-bg: #f8f8f8;
+  --color-text: rgb(0, 0, 0);
+  --color-border: hsla(31, 60%, 49%, 0.212);
+  --color-shadow: hsla(31, 60%, 49%, 0.055);
+}
