@@ -1,13 +1,12 @@
 const select = (props) => {
   return (
     <div>
-      <div class="mb-3 form-floating">
+      <div className="mb-3 form-floating">
         <input
           type={props.type}
-          name="lastname"
-          id="lastname"
+          name={props.name}
+          id={props.name}
           className="form-control required"
-          placeholder={props.label}
         />
         <label>{props.label}</label>
       </div>

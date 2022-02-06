@@ -1,0 +1,53 @@
+.input-checkbox-bf {
+  display: none;
+}
+
+.label-checkbox-bf {
+  position: relative;
+  cursor: pointer;
+  font-weight: 500;
+  background-color: #2f3f670e;
+  border-radius: 0.25rem;
+  width: 100%;
+  padding: 8px;
+
+  /* not selectable text  */
+
+  -webkit-user-select: none; /* Safari */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* IE10+/Edge */
+  user-select: none; /* Standard */
+}
+
+.label-checkbox-bf::before {
+  content: "";
+  background: url("../../assets/img/check-circle.svg");
+  background-position: center;
+  background-size: contain;
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 8px;
+  top: 6px;
+
+  transform: scale(0) rotateZ(180deg);
+  transition: all 0.4s cubic-bezier(0.54, 0.01, 0, 1.49);
+}
+.input-checkbox-bf:checked + .label-checkbox-bf {
+  background-color: var(--color-primary);
+  color: var(--color-neg-text);
+}
+.input-checkbox-bf:checked + .label-checkbox-bf::before {
+  transform: scale(1) rotateZ(0deg);
+}
+
+.label-checkbox-bf::after {
+  content: "";
+  border: 2px solid var(--color-primary);
+  width: 28px;
+  height: 28px;
+  position: absolute;
+  left: 8px;
+  top: 6px;
+  border-radius: 50%;
+}

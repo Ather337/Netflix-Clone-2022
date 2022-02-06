@@ -1,7 +1,9 @@
 :root {
-  --color-primary: #e50914;
+  --color-primary: #c97f32;
   --color-bg: #f8f8f8;
   --color-text: rgb(0, 0, 0);
+  --color-white: #ffffff;
+  --color-neg-text: rgb(248, 248, 248);
   --color-border: hsla(31, 60%, 49%, 0.212);
   --color-shadow: hsla(31, 60%, 49%, 0.055);
 }
