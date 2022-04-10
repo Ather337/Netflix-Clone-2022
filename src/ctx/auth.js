@@ -7,17 +7,21 @@ export const AuthContextProvider = (props) => {
       setIsLoggedIn(true);
     }
   }, []);
-  function login() {
+  function loginHandler() {
     localStorage.setItem("isLoggedIn", "1");
     setIsLoggedIn(true);
   }
-  function logout() {
+  function logoutHandler() {
     localStorage.removeItem("isLoggedIn");
     setIsLoggedIn(false);
   }
   return (
     <AuthContext.Provider
-      value={{ isLoggedIn: isLoggedIn, Login: login, logout: logout }}
+      value={{
+        isLoggedIn: isLoggedIn,
+        loginHandler: loginHandler,
+        logoutHandler: logoutHandler,
+      }}
     >
       {props.children}
     </AuthContext.Provider>

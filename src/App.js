@@ -10,7 +10,7 @@ import React, { useContext } from "react";
 function App() {
   const ctx = useContext(AuthContext);
   return (
-    <div className="App py-3">
+    <div className="App">
       <React.Fragment>
         <Header />
         {ctx.isLoggedIn && <AddStudent />}

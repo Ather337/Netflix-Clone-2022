@@ -6,8 +6,8 @@ function AddStudent() {
   const ctx = useContext(AuthContext);
   return (
     <div className="container">
-      <Logo className={"my-4"} />
-      <button onClick={ctx.logout}>Logout</button>
+      <Logo className={"p-4"} />
+      <button onClick={ctx.logoutHandler}>Logout</button>
       <StudentForm />
     </div>
   );
